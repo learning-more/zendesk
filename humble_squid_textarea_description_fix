@@ -1,0 +1,16 @@
+/* Using Zendesk's Humble Squid template, I found the descriptions associated with Textarea form fields would span the entire width of the form. 
+Notice the label "text" in the DIV section below. 
+<div class="form-field text  optional  request_custom_fields_xxxxxxxx">
+      <label for="request_custom_fields_xxxxxxxx">Preferred Promotion Date details</label>
+      <textarea name="request[custom_fields][xxxxxxxx]" id="request_custom_fields_xxxxxxxx"></textarea>
+    </div>
+
+The below padding-left causes the textarea descriptions to match the rest of the form.
+*/ 
+
+
+.request-new-form .form-field.text p{
+  /* margin-bottom: 20px;
+  display:block; */
+  padding-left: 205px;
+}
